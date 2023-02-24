@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+
+  <style>
+    * {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+h1 {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.form-container {
+	margin-bottom: 20px;
+}
+
+form label {
+	display: block;
+	margin-bottom: 5px;
+}
+
+form input[type="text"] {
+	padding: 5px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+form input[type="submit"] {
+	padding: 10px;
+	background-color:green;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.upload-container {
+	margin-bottom: 20px;
+}
+
+
+
+  </style>
+
+	<div class="container">
+		<h1>Teacher Dashboard</h1>
+		<div class="form-container">
+			<form>
+				<label for="student-search">Filter by Name:</label>
+				<input type="text" id="student-search" name="student-search">
+				<input type="submit" value="Search">
+			</form>
+		</div>
+		<div class="upload-container">
+			<h2>Upload Attendance</h2>
+			<form>
+				<input type="file" name="attendance-file">
+				<input type="submit" value="Upload">
+			</form>
+			<h2>Upload Assignments</h2>
+			<form>
+				<input type="file" name="assignment-file">
+				<input type="submit" value="Upload">
+			</form>
+			<h2>Upload Results</h2>
+			<form>
+				<input type="file" name="result-file">
+				<input type="submit" value="Upload">
+			</form>
+		</div>
+		<div class="students-container">
+			<h2>Students</h2>
+			<table>
+				<thead>
+					<tr>
+						<th>Name</th>
+						<th>Attendance</th>
+						<th>Assignments</th>
+						<th>Results</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Student 1</td>
+						<td>Present</td>
+						<td><a href="https://www.softwaresuggest.com/us/technical-assessment-software?utm_source=goad&utm_medium=assessment-examination-ppc-dynamic-india&utm_term=&campaign_id=17814248157&gclid=cj0kcqiautyfbhcmarisamgcrjs-ppmnspnwezovelyhx3ubkf_kgow7fkyjzebdhr3t3udjw7wvv6aaaht6ealw_wcb">Assignment 1</a></td>
+						<td><a href="https://i.pinimg.com/564x/d6/4b/e6/d64be6d6c0ac1a9459b033e2eb5d842b.jpg">Result 1</a></td>
+					</tr>
+					<tr>
+						<td>Student 2</td>
+						<td>Absent</td>
+						<td><a href="https://www.softwaresuggest.com/us/technical-assessment-software?utm_source=goad&utm_medium=assessment-examination-ppc-dynamic-india&utm_term=&campaign_id=17814248157&gclid=cj0kcqiautyfbhcmarisamgcrjs-ppmnspnwezovelyhx3ubkf_kgow7fkyjzebdhr3t3udjw7wvv6aaaht6ealw_wcb">Assignment 2</a></td>
+						<td><a href="https://www.freereporttemplate.com/wp-content/uploads/2021/09/Report-Card-Tem.50zx.jpg">Result 2</a></td>
+					</tr>
+					<tr>
+						<td>Student 3</td>
+						<td>Present</td>
+						<td><a href="https://www.softwaresuggest.com/us/technical-assessment-software?utm_source=goad&utm_medium=assessment-examination-ppc-dynamic-india&utm_term=&campaign_id=17814248157&gclid=cj0kcqiautyfbhcmarisamgcrjs-ppmnspnwezovelyhx3ubkf_kgow7fkyjzebdhr3t3udjw7wvv6aaaht6ealw_wcb">Assignment 3</a></td>
+						<td><a href="https://marketplace.canva.com/EAFDSQQVhp4/1/0/1131w/canva-white-and-yellow-minimalis-education-report-card-kXwRtyL4j3Y.jpg">Result 3</a></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<div style="text-align: center;">
+		
+	  
+	<button type="button" onclick="logout()" class="col-md-2 col-md-offset-10" style="background-color: lightskyblue; color: white;"><a href=login.html class="btn btn-primary">Logout</a></button>  
+	</div>
+</body>
+</html>
+

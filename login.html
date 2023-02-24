@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eSchool</title>
+</head>
+<body>
+
+<style>
+    /* Style for the login form container */
+.col-md-8 {
+  max-width: 800px; /* Set the maximum width of the container */
+  margin: 0 auto; /* Center the container on the page */
+  padding: 20px; /* Add some padding */
+  border: 1px solid burlywood; /* Add a border */
+  background-color: lightblue; /* Set the background color */
+}
+
+/* Style for the form elements */
+.form-control {
+  margin-bottom: 10px; /* Add some spacing between the form elements */
+  border-radius: 0; /* Remove the border radius */
+}
+
+/* Style for the login button */
+.btn-primary {
+  background-color: lightskyblue; /* Set the background color */
+  color: white; /* Set the text color */
+  border-radius: 0; /* Remove the border radius */
+  transition: all 0.3s ease; /* Add a smooth transition */
+}
+
+.btn-primary:hover {
+  background-color: #3498db; /* Change the background color on hover */
+  color: white; /* Set the text color on hover */
+}
+
+</style>
+
+<div style="text-align: center;">
+    <div class="col-md-8 col-md-offset-2">
+        <br/>
+        Enter Email:
+        <input type="text" class="form-control" name="" id="email"><br/>
+        Enter Pass:
+        <input type="text" class="from-control" name="" id="pass"><br/>
+        
+        Select User Type:
+        <select id="usertype" class="form-control">
+            <option value="admin">admin</option>
+            <option value="teacher">Teacher</option>
+            <option value="student">student</option>
+        </select>
+        <br/>
+        
+<button type="button" onclick="login()" class="form-control btn btn-primary" style="background-color: lightskyblue; color: white;">login</button>
+    </div>
+    </div>
+
+</body>
+</html>
+
+
+
+
+
+<script>
+    function login(){
+    var email=document.getElementById("email").value;
+    var pass=document.getElementById("pass").value;
+    var usertype=document.getElementById("usertype").value;
+
+    if(email == "admin@gmail.com" && pass=="a123" && usertype=="admin"){
+        window.location.href="principle.html";
+
+    }else if(email == "teacher@gmail.com" && pass=="t123" && usertype=="teacher"){
+        window.location.href="teacher.html";
+    }else if(email == "student@gmail.com" && pass=="s123" && usertype=="student"){
+        window.location.href="student.html";
+    }
+    else{
+        window.location.href="login.html";
+        alert("you have entered incorrect email and password");
+    }
+}
+</script>
